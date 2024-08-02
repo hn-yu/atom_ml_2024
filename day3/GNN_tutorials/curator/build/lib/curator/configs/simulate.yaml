@@ -1,0 +1,9 @@
+defaults:
+  - simulator: md
+  - _self_
+
+cfg: null
+seed: 1234
+run_path: .
+model_path: null
+device: cuda

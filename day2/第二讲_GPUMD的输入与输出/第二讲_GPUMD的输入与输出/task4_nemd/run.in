@@ -1,0 +1,13 @@
+potential		C_2024_NEP4.txt
+
+time_step       1.0
+
+velocity        300
+ensemble        npt_ber 300 300 100 0 0 0 100 100 100 1000
+dump_position   1000
+run             10000
+
+fix				0
+ensemble 		heat_lan 300 100 50 1 9
+compute      	0 10 100 temperature  
+run				100000
